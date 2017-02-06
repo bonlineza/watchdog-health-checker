@@ -1,0 +1,1 @@
+A simple python app to query a health.txt file on a server and perform Slack alerts in the event that the server is malfunctioning. 
