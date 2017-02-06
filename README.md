@@ -2,6 +2,8 @@
 
 A versatile python app to query a health.txt file on a remote server and perform Slack alerts in the event that the server is malfunctioning.
 
+<center>![Watchdog](images/logo.png)</center>
+
 Installation
 ------------
 
@@ -16,7 +18,7 @@ $ git clone https://github.com/bonlineza/watchdog-health-checker.git
 
 ### 2. Installing dependencies
 
-Please also ensure the Python 3.4 is installed,
+Please also ensure that Python 3.4 is installed,
 along with the following libraries:
 
 * ```requests```
@@ -40,7 +42,7 @@ $ sudo apt-get install python3-pip
 
 ### 3. Configuring your JSON file
 
-The provided file ```secrets-sample.json``` illustrates the format required for use with watchdog.py. Duplicate this file and name the
+The provided file ```secrets-sample.json``` illustrates the format required for use with ```watchdog.py```. Duplicate this file and name the
 copy ```secrets.json``` (which is the default file that watchdog looks for).
 
 ``` json
