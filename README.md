@@ -2,7 +2,7 @@
 
 A versatile python app to query a health.txt file on a remote server and perform Slack alerts in the event that the server is malfunctioning.
 
-<center>![Watchdog](images/logo.png)</center>
+![Watchdog](images/logo.png)
 
 Installation
 ------------

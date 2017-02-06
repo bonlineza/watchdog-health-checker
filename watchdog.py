@@ -2,19 +2,16 @@
 Python 3.4 (may work on 2.7+ but not supported).
 Checks if server returns expected health check.
 Alerts a selected Slack channel if server down.
-Version 1.1
+Version 1.1.1
 06-02-2017
-
-Dependencies:
-- requests
 """
 
 # Importing required libraries and dependencies.
 import json
-import requests
 import time
 import sys
 import getopt
+import requests
 
 # Defining some default parameters for use in the standard case.
 secrets_file_name = 'secrets.json'
@@ -77,7 +74,7 @@ if __name__ == '__main__':
             prepend = arg
         elif opt in ("-w", "--wait"):
             wait_time = arg
-            if float(wait_time) < 5.0:
+            if int(wait_time) < 5.0:
                 wait_time = '5'
         elif opt in ("-h", "--help"):
             print(usage_text)
@@ -115,7 +112,7 @@ if __name__ == '__main__':
                 print('ERROR: Your internet connection is offline.')
 
             # The script waits for the user-determined duration (seconds) and then re-tries.
-            time.sleep(float(wait_time))
+            time.sleep(int(wait_time))
 
     except KeyboardInterrupt:
         sys.exit(3)
