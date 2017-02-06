@@ -74,7 +74,8 @@ if __name__ == '__main__':
             prepend = arg
         elif opt in ("-w", "--wait"):
             wait_time = arg
-            if int(wait_time) < 5.0:
+            wait_time = str(round(float(wait_time)))
+            if int(wait_time) < 5:
                 wait_time = '5'
         elif opt in ("-h", "--help"):
             print(usage_text)
