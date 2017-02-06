@@ -18,24 +18,18 @@ $ git clone https://github.com/bonlineza/watchdog-health-checker.git
 
 ### 2. Installing dependencies
 
-Please also ensure that Python 3.4 is installed,
-along with the following libraries:
+Ensure that Python 3.4+ is installed, along with the following library:
 
 * ```requests```
-* ```json```
-* ```time```
-* ```sys```
-* ```getopt```
 
-
-If they aren't installed, you can install them through *pip3*
+If ```requests``` is not installed, you can install it through ```pip3```
 by opening your terminal and typing
 
 ```
-$ sudo pip3 install <name of library>
+$ sudo pip3 install requests
 ```
 
-If *pip3* is not installed, install it by typing
+If ```pip3``` is not installed, install it by typing
 ```
 $ sudo apt-get install python3-pip
 ```
